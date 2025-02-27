@@ -1,4 +1,4 @@
-# Paralela
+# RMI
 
 Realizado por: 
 
