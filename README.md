@@ -1,5 +1,9 @@
 # Paralela
 
+Realizado por: 
+
+Bibiana Maria Roman
+Sebastian Gonzalez
 
 Diagrama de clases RMI
 
