@@ -1,4 +1,6 @@
-package org.example;
+package servidor;
+
+import interfaces.SalarioRMI;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;

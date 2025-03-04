@@ -1,4 +1,6 @@
-package org.example;
+package cliente;
+import interfaces.SalarioRMI;
+
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.Scanner;
