@@ -16,6 +16,11 @@ public class SalarioImpl extends UnicastRemoteObject implements SalarioRMI {
     }
 
     @Override
+    public boolean verificarCredenciales(String usuario, String password) throws RemoteException {
+        return usuario.equals("admin") && password.equals("1234");
+    }
+
+    @Override
     public void llenarMatriz(int empleados, int meses) throws RemoteException {
         this.empleados = empleados;
         this.meses = meses;
@@ -24,7 +29,7 @@ public class SalarioImpl extends UnicastRemoteObject implements SalarioRMI {
 
         for (int i = 0; i < empleados; i++) {
             for (int j = 0; j < meses; j++) {
-                matrizSalarios[i][j] = rand.nextInt(2000) + 1000; // Salario entre 1000 y 3000
+                matrizSalarios[i][j] = rand.nextInt(2000) + 1000;
             }
         }
     }

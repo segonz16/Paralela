@@ -11,4 +11,8 @@ public interface SalarioRMI extends Remote {
     double[] promedioPorMes() throws RemoteException;
 
     int totalPagado() throws RemoteException;
+
+    boolean verificarCredenciales(String usuario, String password) throws RemoteException;
+
+
 }
